@@ -1,0 +1,132 @@
+<!doctype html>
+<html>
+    <head>
+        <title>HW4: jQuery</title>
+     
+        <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+        <script src="main.js" type="text/javascript"></script>
+
+        <style type="text/css">
+            h1 {
+                text-align: center;
+            }
+            .left {
+                width: 50%;
+                float: left;
+                margin: 0 auto;
+            }
+            .left ol {
+                width: 70%;
+            }
+            input {
+                width: 70%;
+            }
+            .right {
+                width: 50%;
+                float: right;
+            }
+            .response {
+                display: none;
+            }
+            img {
+                max-width: 90%;
+                margin: 0 auto;
+            }
+            .row {
+                clear: both;
+                margin: 10px 0;
+            }
+
+            label, .submit-button {
+                margin-top: 10px;
+                display: block;
+            }
+            .submit-button {
+                padding: 10px;
+                margin-left: 40px;
+            }
+            span[class^="word-"] {
+                text-decoration: underline;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Pusheen Mad-Libs!</h1>
+        <div class="left">
+            <ol>
+                <li>
+                    <label>A noun:</label>
+                    <input type="text" class="word-1">
+                </li>
+                <li>
+                    <label>A noun:</label>
+                    <input type="text" class="word-2">
+                </li>
+                <li>
+                    <label>A verb:</label>
+                    <input type="text" class="word-3">
+                </li>
+                <li>
+                    <label>A noun:</label>
+                    <input type="text" class="word-4">
+                </li>
+                <li>
+                    <label>A noun:</label>
+                    <input type="text" class="word-5">
+                </li>
+                <li>
+                    <label>A singular noun:</label>
+                    <input type="text" class="word-6">
+                </li>
+                <li>
+                    <label>A verb:</label>
+                    <input type="text" class="word-7">
+                </li>
+                <li>
+                    <label>An exclamation:</label>
+                    <input type="text" class="word-8">
+                </li>
+            </ol>
+            <button class="submit-button">Submit!</button>
+        </div>
+        <div class="right response">
+            <h1><span class="word-1"></span>: A how-to</h1>
+
+            <div class="row">
+                <div class="left">
+                    <img src="https://s-media-cache-ak0.pinimg.com/originals/2d/65/36/2d6536608ec52c59d85e0e8f5a386928.gif">
+                    <p>1. Read <span class="word-2"></span></p>
+                </div>
+    
+                <div class="right">
+                    <img src="https://s-media-cache-ak0.pinimg.com/originals/79/93/57/799357bb640e524ad9e67aaaeb638b34.gif">
+                    <p>2. <span class="word-3"></span> ingredients</p>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="left">
+                    <img src="http://data.whicdn.com/images/87909348/large.gif">
+                    <p>3. Preheat <span class="word-4"></span></p>
+                </div>
+
+                <div class="right">
+                    <img src="http://24.media.tumblr.com/tumblr_m1d3glYAv71rpbhmao1_400.gif">
+                    <p>4. Make a huge <span class="word-5"></span> because you are a <span class="word-6"></span></p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="left">
+                    <img src="https://s-media-cache-ak0.pinimg.com/originals/56/8c/1b/568c1b91aca574f292d19e8bc4f0fdaa.gif">
+                    <p>5. <span class="word-7"></span> a pizza</p>
+                </div>
+
+                <div class="right">
+                    <img src="https://s-media-cache-ak0.pinimg.com/originals/96/cb/f1/96cbf1cb56de8d012513832d664d0902.gif">
+                    <p>6. <span class="word-8"></span>!!</p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
